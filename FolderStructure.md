@@ -1,3 +1,4 @@
+<pre>
 src/
 │
 ├── app/
@@ -83,3 +84,4 @@ src/
 ├── formatCurrency.ts
 ├── formatDate.ts
 └── validators.ts
+</pre>
