@@ -1,10 +1,16 @@
 import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import PublicLayout from "../components/layout/PublicLayout";
-import Landing from "../pages/public/Landing";
-import About from "../pages/public/About";
+import {
+  Landing,
+  About,
+  Services,
+  Coaches,
+  Contact,
+  SignIn,
+} from "../pages/public";
 
-const router = createBrowserRouter([
+const PublicRouter = createBrowserRouter([
   {
     path: "/",
     element: <PublicLayout />,
@@ -17,12 +23,24 @@ const router = createBrowserRouter([
         path: "about",
         element: <About />,
       },
+      {
+        path: "services",
+        element: <Services />,
+      },
+      {
+        path: "coaches",
+        element: <Coaches />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
     ],
   },
 ]);
 
 const AppRoutes = () => {
-  return <RouterProvider router={router} />;
+  return <RouterProvider router={PublicRouter} />;
 };
 
 export default AppRoutes;
